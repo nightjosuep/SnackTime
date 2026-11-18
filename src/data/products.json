@@ -1,0 +1,92 @@
+[
+  {
+    "id": "sandwich",
+    "name": "Sándwich de pollo",
+    "description": "Pollo, queso y vegetales",
+    "price": 4.5,
+    "category": "Comida",
+    "emoji": "🥪",
+    "color": "#FDE9D5"
+  },
+  {
+    "id": "empanada",
+    "name": "Empanada",
+    "description": "Recién horneada",
+    "price": 2.5,
+    "category": "Comida",
+    "emoji": "🥟",
+    "color": "#FFF0C9"
+  },
+  {
+    "id": "fruit-salad",
+    "name": "Ensalada de frutas",
+    "description": "Fruta fresca de temporada",
+    "price": 3.75,
+    "category": "Comida",
+    "emoji": "🍓",
+    "color": "#FCE1E6"
+  },
+  {
+    "id": "cookie",
+    "name": "Galleta con chispas",
+    "description": "Suave y recién horneada",
+    "price": 1.5,
+    "category": "Comida",
+    "emoji": "🍪",
+    "color": "#F8E3D0"
+  },
+  {
+    "id": "muffin",
+    "name": "Muffin de chocolate",
+    "description": "Con trocitos de chocolate",
+    "price": 2.75,
+    "category": "Comida",
+    "emoji": "🧁",
+    "color": "#F3E2F8"
+  },
+  {
+    "id": "chips",
+    "name": "Papas crujientes",
+    "description": "Porción individual",
+    "price": 1.75,
+    "category": "Comida",
+    "emoji": "🍟",
+    "color": "#FFF0C9"
+  },
+  {
+    "id": "water",
+    "name": "Agua natural",
+    "description": "Botella de 500 ml",
+    "price": 1.25,
+    "category": "Bebidas",
+    "emoji": "💧",
+    "color": "#DDF2FA"
+  },
+  {
+    "id": "juice",
+    "name": "Jugo de naranja",
+    "description": "Jugo refrescante",
+    "price": 2,
+    "category": "Bebidas",
+    "emoji": "🍊",
+    "color": "#FFE8CE"
+  },
+  {
+    "id": "milkshake",
+    "name": "Licuado de fresa",
+    "description": "Leche y fresas",
+    "price": 3.25,
+    "category": "Bebidas",
+    "emoji": "🥤",
+    "color": "#FCE1E6"
+  },
+  {
+    "id": "smoothie",
+    "name": "Licuado verde",
+    "description": "Fruta y un toque natural",
+    "price": 3.5,
+    "category": "Bebidas",
+    "emoji": "🥝",
+    "color": "#E5F3D9"
+  }
+]

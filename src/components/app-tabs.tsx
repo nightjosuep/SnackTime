@@ -1,7 +1,7 @@
 import { NativeTabs } from 'expo-router/native-tabs';
 import { useColorScheme } from 'react-native';
 
-import { Colors } from '@/constants/theme';
+import { Colors, FontFamilies } from '@/constants/theme';
 
 export default function AppTabs() {
   const scheme = useColorScheme();
@@ -11,21 +11,21 @@ export default function AppTabs() {
     <NativeTabs
       backgroundColor={colors.background}
       indicatorColor={colors.backgroundElement}
-      labelStyle={{ selected: { color: colors.text } }}>
+      labelStyle={{
+        default: { fontFamily: FontFamilies.body },
+        selected: { color: colors.text, fontFamily: FontFamilies.body },
+      }}>
       <NativeTabs.Trigger name="index">
-        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>Catálogo</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           src={require('@/assets/images/tabIcons/home.png')}
           renderingMode="template"
         />
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger name="explore">
-        <NativeTabs.Trigger.Label>Explore</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/explore.png')}
-          renderingMode="template"
-        />
+      <NativeTabs.Trigger name="calculator">
+        <NativeTabs.Trigger.Label>Calculadora</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="function" md="calculate" />
       </NativeTabs.Trigger>
     </NativeTabs>
   );

@@ -7,13 +7,18 @@ import '@/global.css';
 
 import { Platform } from 'react-native';
 
+export const FontFamilies = {
+  heading: 'DopeFortune',
+  body: 'SuckerBrush',
+} as const;
+
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
+    text: '#29351E',
+    background: '#F5F8E8',
+    backgroundElement: '#FFFFFF',
+    backgroundSelected: '#E5EDC5',
+    textSecondary: '#68745A',
   },
   dark: {
     text: '#ffffff',

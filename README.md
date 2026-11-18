@@ -26,6 +26,41 @@ Catálogo de alimentos y bebidas con imágenes y precios.
 Carrito para agregar, eliminar y modificar cantidades.
 Cálculo automático del total.
 
+## Implementación actual
+- Catálogo local organizado en secciones de comida y bebidas, con búsqueda.
+- El acumulado de los productos seleccionados aparece debajo del catálogo.
+- Una calculadora permite ingresar el presupuesto en USD y ver el gasto y cuánto dinero sobra o falta.
+- Los importes se muestran en dólares con dos decimales; no se realizan pagos desde la aplicación.
+
+### Cambiar productos e ilustraciones
+- Edita nombres, precios, categorías y emojis en `src/data/products.json`.
+- Las ilustraciones actuales son emojis guardados en el campo `emoji` de cada producto; no hay fotografías separadas todavía.
+- La categoría `Comida` o `Bebidas` determina en qué sección aparece el producto.
+
+### Tipografías
+- Los archivos están en `assets/fonts/`.
+- `DopeFortune.ttf` se usa en los títulos y `SuckerBrush.ttf` en el resto del texto.
+- El texto general usa un tamaño ligeramente mayor para mantener su legibilidad con Sucker Brush.
+- Revisa las licencias incluidas en los ZIP originales antes de distribuir la app: Sucker Brush indica uso personal y Dope Fortune indica un pago de €2 por proyecto.
+
+### Diseño visual
+La interfaz usa una paleta verde lima, superficies claras, tarjetas redondeadas y botones de alto contraste, adaptados al catálogo y calculadora de SnackTime.
+
+### Organización del código
+```text
+src/
+  app/                 # Pantallas y navegación de Expo Router
+  components/
+    cart/              # Componentes del carrito
+    catalog/           # Componentes del catálogo
+  data/                # Catálogo local en JSON
+  hooks/               # Estado compartido del carrito y hooks de tema
+  types/               # Tipos compartidos
+  utils/               # Formateo de moneda
+```
+
+Inicia la aplicación con `npm start` y pruébala en Expo Go o en el navegador.
+
 ## Restricciones
 - No incluir pagos electrónicos.
 - No implementar pedidos a domicilio.
