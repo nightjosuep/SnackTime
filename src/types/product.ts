@@ -6,4 +6,8 @@ export type Product = {
   category: string;
   emoji: string;
   color: string;
+  calories?: number;
+  tags?: string[];
+  allergens?: string[];
+  ingredients?: string[];
 };

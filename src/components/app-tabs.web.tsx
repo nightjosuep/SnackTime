@@ -9,11 +9,14 @@ import {
 import { Pressable, View, StyleSheet } from 'react-native';
 
 import { FontFamilies, MaxContentWidth, Spacing } from '@/constants/theme';
+import { useCart } from '@/hooks/use-cart';
 
 import { ThemedText } from './themed-text';
 import { ThemedView } from './themed-view';
 
 export default function AppTabs() {
+  const { itemCount } = useCart();
+
   return (
     <Tabs>
       <TabSlot style={{ height: '100%' }} />
@@ -23,7 +26,9 @@ export default function AppTabs() {
             <TabButton>Catálogo</TabButton>
           </TabTrigger>
           <TabTrigger name="calculator" href="/calculator" asChild>
-            <TabButton>Calculadora</TabButton>
+            <TabButton>
+              {itemCount > 0 ? `Calculadora (${itemCount})` : 'Calculadora'}
+            </TabButton>
           </TabTrigger>
         </CustomTabList>
       </TabList>

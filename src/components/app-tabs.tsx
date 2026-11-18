@@ -2,10 +2,12 @@ import { NativeTabs } from 'expo-router/native-tabs';
 import { useColorScheme } from 'react-native';
 
 import { Colors, FontFamilies } from '@/constants/theme';
+import { useCart } from '@/hooks/use-cart';
 
 export default function AppTabs() {
   const scheme = useColorScheme();
   const colors = Colors[scheme === 'dark' ? 'dark' : 'light'];
+  const { itemCount } = useCart();
 
   return (
     <NativeTabs
@@ -24,7 +26,9 @@ export default function AppTabs() {
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger name="calculator">
-        <NativeTabs.Trigger.Label>Calculadora</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>
+          {itemCount > 0 ? `Calculadora (${itemCount})` : 'Calculadora'}
+        </NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon sf="function" md="calculate" />
       </NativeTabs.Trigger>
     </NativeTabs>

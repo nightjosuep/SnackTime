@@ -6,7 +6,11 @@
     "price": 4.5,
     "category": "Comida",
     "emoji": "🥪",
-    "color": "#FDE9D5"
+    "color": "#FDE9D5",
+    "calories": 320,
+    "tags": ["Proteína", "Horneado", "Popular"],
+    "allergens": ["Gluten", "Lácteos"],
+    "ingredients": ["Pechuga de pollo", "Queso tierno", "Lechuga", "Tomate", "Pan integral"]
   },
   {
     "id": "empanada",
@@ -15,7 +19,11 @@
     "price": 2.5,
     "category": "Comida",
     "emoji": "🥟",
-    "color": "#FFF0C9"
+    "color": "#FFF0C9",
+    "calories": 240,
+    "tags": ["Al paso", "Tradicional"],
+    "allergens": ["Gluten"],
+    "ingredients": ["Masa de trigo crocante", "Carne sazonada", "Cebolla", "Especias"]
   },
   {
     "id": "fruit-salad",
@@ -24,7 +32,11 @@
     "price": 3.75,
     "category": "Comida",
     "emoji": "🍓",
-    "color": "#FCE1E6"
+    "color": "#FCE1E6",
+    "calories": 140,
+    "tags": ["100% Natural", "Saludable", "Sin azúcar"],
+    "allergens": [],
+    "ingredients": ["Fresas", "Kiwi", "Manzana", "Melón", "Naranja"]
   },
   {
     "id": "cookie",
@@ -33,7 +45,11 @@
     "price": 1.5,
     "category": "Comida",
     "emoji": "🍪",
-    "color": "#F8E3D0"
+    "color": "#F8E3D0",
+    "calories": 180,
+    "tags": ["Dulce", "Económico"],
+    "allergens": ["Gluten", "Lácteos", "Huevo"],
+    "ingredients": ["Harina de trigo", "Chispas de chocolate semiamargo", "Mantequilla"]
   },
   {
     "id": "muffin",
@@ -42,7 +58,11 @@
     "price": 2.75,
     "category": "Comida",
     "emoji": "🧁",
-    "color": "#F3E2F8"
+    "color": "#F3E2F8",
+    "calories": 290,
+    "tags": ["Favorito", "Esponjoso"],
+    "allergens": ["Gluten", "Lácteos", "Huevo"],
+    "ingredients": ["Cacao puro", "Trocitos de chocolate", "Harina", "Leche"]
   },
   {
     "id": "chips",
@@ -51,7 +71,11 @@
     "price": 1.75,
     "category": "Comida",
     "emoji": "🍟",
-    "color": "#FFF0C9"
+    "color": "#FFF0C9",
+    "calories": 210,
+    "tags": ["Crujiente", "Económico"],
+    "allergens": [],
+    "ingredients": ["Papas naturales seleccionadas", "Aceite vegetal", "Sal marina"]
   },
   {
     "id": "water",
@@ -60,7 +84,11 @@
     "price": 1.25,
     "category": "Bebidas",
     "emoji": "💧",
-    "color": "#DDF2FA"
+    "color": "#DDF2FA",
+    "calories": 0,
+    "tags": ["0 Calorías", "Hidratación pura"],
+    "allergens": [],
+    "ingredients": ["Agua purificada y mineralizada 500ml"]
   },
   {
     "id": "juice",
@@ -69,7 +97,11 @@
     "price": 2,
     "category": "Bebidas",
     "emoji": "🍊",
-    "color": "#FFE8CE"
+    "color": "#FFE8CE",
+    "calories": 110,
+    "tags": ["Vitamina C", "Fresco", "Sin conservantes"],
+    "allergens": [],
+    "ingredients": ["Naranjas frescas recién exprimidas"]
   },
   {
     "id": "milkshake",
@@ -78,7 +110,11 @@
     "price": 3.25,
     "category": "Bebidas",
     "emoji": "🥤",
-    "color": "#FCE1E6"
+    "color": "#FCE1E6",
+    "calories": 220,
+    "tags": ["Cremoso", "Energía para el recreo"],
+    "allergens": ["Lácteos"],
+    "ingredients": ["Fresas naturales", "Leche entera fresca", "Toque de miel"]
   },
   {
     "id": "smoothie",
@@ -87,6 +123,10 @@
     "price": 3.5,
     "category": "Bebidas",
     "emoji": "🥝",
-    "color": "#E5F3D9"
+    "color": "#E5F3D9",
+    "calories": 130,
+    "tags": ["Saludable", "Antioxidante"],
+    "allergens": [],
+    "ingredients": ["Kiwi", "Manzana verde", "Espinaca tierna", "Agua purificada"]
   }
 ]
